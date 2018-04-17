@@ -39,14 +39,18 @@ The underlying implementation is a simple linked list of subqueues *(delayed shi
 - When adding an element, it is pushed to the back of the last subqueue, or a new one if the last subqueue is full.
 - Each subqueue is an array and the index of the element at the front of the subqueue
 - When removing the first element, the index is increased in the first subqueue. If it reaches the end of the subqueue,
-the subqueue is destroyed. The subqueue is never *shifted*, so it is very efficient.
+the subqueue is destroyed. The subqueue is never *shifted*, so each operation is efficient.
 
 The only operations performed are:
 
-- pushing an element to the back an array
+- pushing an element to the back of an array
 - adding a new subqueue
 - destroying the front subqueue
 - moving an index in a subqueue
 
 Each of those operations are O(1), there is never any array resizing. The use of arrays instead of just linked lists
 allow to be faster and use less RAM than linked lists.
+
+## Contributions
+
+If you have contributions or feature requests, open a pull request or create a new issue
