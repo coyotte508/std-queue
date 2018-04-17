@@ -11,7 +11,7 @@ linked lists are not very efficent storage-wise.
 
 ## Usage
 
-```
+```js
 import Queue from 'std-queue';
 
 const queue = new Queue();
