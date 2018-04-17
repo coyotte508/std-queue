@@ -3,7 +3,7 @@ Efficient fifo queue for handling large amounts of data in `O(1)`
 
 ## Description 
 
-This module was created because most other queue modules in javascripts either use simple arrays or
+This module was created because most other queue modules in javascript either use simple arrays or
 doubly linked lists.
 
 Both have drawbacks: Large arrays are terribly inefficient when removing the first element and 
