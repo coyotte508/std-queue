@@ -7,6 +7,12 @@
   "source": "index.ts",
   "repository": "git@github.com:coyotte508/std-queue",
   "author": "coyotte508 <coyotte508@gmail.com>",
+  "keywords": [
+    "queue",
+    "fifo",
+    "efficient",
+    "fast"
+  ],
   "license": "MIT",
   "files": [
     "dist",
