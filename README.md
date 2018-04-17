@@ -27,7 +27,7 @@ queue.push('Hello', 'World');
 queue.peek(); // 1
 queue.last(); // 'World';
 queue.shift(); // 1, head is now at 2
-queue.length; // 2
+queue.length; // 9993
 queue.clear(); // Empties queue
 queue.shift(); // undefined
 ```
