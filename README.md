@@ -53,4 +53,4 @@ allow to be faster and use less RAM than linked lists.
 
 ## Contributions
 
-If you have contributions or feature requests, open a pull request or create a new issue
+If you have contributions or feature requests, open a pull request or create a new issue. I will glady add basic features if they are needed.
