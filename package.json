@@ -23,7 +23,8 @@
   "scripts": {
     "build": "tsc",
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "watch": "tsc -watch"
+    "watch": "tsc -watch",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
