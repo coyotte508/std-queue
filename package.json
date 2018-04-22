@@ -1,6 +1,6 @@
 {
   "name": "std-queue",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Efficient fifo queue for handling large amounts of data in O(1)",
   "main": "dist/index.js",
   "types": "index.d.ts",
