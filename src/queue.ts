@@ -24,7 +24,7 @@ export default class Queue<T> {
 
     const val = this.top.dequeue();
     this._size--;
-    if (this.top.size === 0 && this.top.full() && this._size > 0) {
+    if (this.top.size === 0 && this.top.full()) {
       this.top = this.top.next;
     }
     return val;

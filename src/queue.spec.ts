@@ -18,6 +18,21 @@ describe('Queue', () => {
       queue.push(4);
       expect(queue.shift()).to.equal(4);
     });
+
+    it("should behave ok when matching granularity", () => {
+      const queue = new Queue();
+
+      for (let i = 0; i < 1000; i++) {
+        queue.push(i);
+      }
+
+      for (let i = 0; i < 1000; i++) {
+        queue.shift();
+      }
+
+      queue.push(2);
+      expect(queue.shift()).to.equal(2);
+    });
   });
 
   describe('length', () => {
