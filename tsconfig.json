@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "ES2018",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -9,9 +9,8 @@
     "emitDecoratorMetadata": true,
     "allowJs": true,
     "strict": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "types": [
-      "node",
       "mocha",
       "chai"
     ],

@@ -26,5 +26,5 @@ export default class Subqueue <T> {
   private index: number = 0;
   private array: T [] = [];
 
-  public next: Subqueue<T> = null;
+  public next: Subqueue<T> | null = null;
 }

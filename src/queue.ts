@@ -17,7 +17,7 @@ export default class Queue<T> {
     this._size += elems.length;
   }
 
-  public shift(): T {
+  public shift(): T | undefined {
     if (this._size === 0) {
       return undefined;
     }
@@ -25,7 +25,7 @@ export default class Queue<T> {
     const val = this.top.dequeue();
     this._size--;
     if (this.top.size === 0 && this.top.full()) {
-      this.top = this.top.next;
+      this.top = this.top.next!;
     }
     return val;
   }
